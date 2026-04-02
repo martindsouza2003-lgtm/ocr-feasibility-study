@@ -1,0 +1,96 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - eng_sample_01.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: eng_sample_01.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <!-- Image -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/eng_sample_01.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <!-- Ground Truth -->
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    Imagine for a moment that our 
+culture has been tranformed into society 
+of flowers. Some of us are ptunias, some of
+us are begonias; others are tulips, gardonias 
+or mangnolias. Now lets say that the prycha-
+trists are the roses. I&#x27;d like you to imagine
+What a typical day a office night look
+like for the rose pyschiatrist. The first 
+goes to Patient of the day happens to be a 
+calla lily. the Rose psychiatrish goes to 
+work measuring the radius of the 
+Calla lily yellow spadie, the circumfernce 
+of the white spatheg the length of its 
+green stem.
+                </div>
+
+                <!-- OCR Outputs -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+
+                <div class="space-y-4">
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">29.8%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">AD (७0७. न we 0१००5. . की Wak b ‘mas otra at जी, con ae ay magne Now leks cay thot TH. . fycha- ; ish dw tee maser Od ॥ ७ Ips lv (०%ु।५ Lu hal a जम 4०५ a} allen “tt L lwokk ५ (hn tng 048 ~ yschialry b. \ Pb (0९७०९) ० ०७, day happen! hy be a Col |a was (Pos (8000४ yh (७०९ 00५०6 fa थे diy ri) ny Calle ne yh श 5१९0४ 0 CI scant een G | Ayo Whe 5 ge iy 4 Xu es of Wy ae) ९१९१,</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">34.2%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">cul ge | Dor Q ial _ te a} ay - AMIR Wes been mal it oy - of) Lf \pwo. nen ra we teu 2. To me y wy ar 9९ eprint ९ AV Qn ot hips garson 055 —o&amp; magne - Now | ley Gay nal HAR ? che bigs Ge tan छाए Od Wh Ips ॥ (mgying - Wwhak व typitel do al Bran rt ink lool file he the Goose फुल: (Pewenl cD ho Sy hope tebe हु coll | vik 0७ Pose pigchars ( yo Goode Pocmuieg fur 390 ott aca iy yi 5049 Aro Chaweng</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">5.7%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">momonl in Jom९ 0 0&#x27; @ haL ni D Cal la ९0</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">1.5%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">❌ OCR Failed</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">TrOCR</span>
+                            <span class="text-xs font-semibold">0.0%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">ङ्क्षाओं</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>
+    

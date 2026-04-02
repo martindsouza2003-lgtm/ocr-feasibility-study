@@ -1,0 +1,118 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - eng_sample_04.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: eng_sample_04.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <!-- Image -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/eng_sample_04.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <!-- Ground Truth -->
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    SHRIRAM
+
+Chits
+
+EMPOWERING PEOPLE THROUGH PROSPERITY
+
+              Handwriting Series
+
+            Simple writing-1
+
+&quot;The Gita can be seen as the main 
+literary support for the great religious 
+civilization of India, the oldest surviving
+culture in the world. The present 
+translation and commentary is another
+mainfestaration of the permanent living 
+importance of Geeta. Swami Bhaktivedanta 
+brings to the west a Salutary reminder 
+that our highly activistic and one sided 
+Culture is faced with a crisis that may 
+end in self-destruction because it lacks 
+the inner depth of an authentic meta-
+physical consciousness. without such 
+depth, our moral and political protesttions 
+are just so much verbiage.&quot;
+
+Thomas Merton                         Rajendra Bitting
+author                                  font Author
+
+
+
+
+
+www.shriramchits.in      Toll Free No.: 1800-102-6688
+
+/18 14:47.
+                </div>
+
+                <!-- OCR Outputs -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+
+                <div class="space-y-4">
+
+                    <div class="border rounded-lg p-4 border-yellow-300 bg-yellow-50 text-yellow-900">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">66.0%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">&gt; iF Spshrinay SHRIRAM Simple variting— { “the Gita can be Seen as the main \iterary Support for the great religious | civilization of India, the oldest surviving culture ‘in the voorld. the present translation and commentary is another mai nfestavation of the permanent living importance of Geeta. Svoami Bhalctivedan) brings tots the West a Salutary reminder that our highly activistic and one Side highly activistic and one Sided culture is faced with a crisis that may end Bae se\P-destruction because it lacks the inner dlefth of an authentic meta- Physical Consciousness. without Such _ 2०9१७, our moral and political protestrions ore कि 8 4:47</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">40.5%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">A ee OS SESS ESI OES PERO N | 8 Set 5०२०० ५०५४ SORES _ 4 : जाए न “A : RASHRIRAM: = 0 Poorer Ls : Ha. 4 5 ue, i ___—Haiidwiriting, Semis: te . _ ---- Single: writing aA “ | — the Gita can&#x27;be sétinuas the main. |. | 206४५ Support पल): great religious |: || civilization ef India, the-oldest survivigg |: | ट्रक i the ‘toorlds Tie present. | “| bravslation cand commentary is another | “| gpainfestaration ofthe. peripavent livigg f: | drpportanee. off Geeta. Suoansithaldivedantat - | aris tothe, West @ Saluttary teminder | |. paak our highly octivistijayd oneSided |}: | Sya ato: celk-destruction ‘Beeusedt lacks |. |! the isber depth ofumauthentle meébas fy | epi, 50877 aid politiéal iprotesthions p. | tions tere. तह Renda Sting | | जय) Author | FPO MAES Ss a ; mn Wwishriramenits tn 3 voll Freeh. On</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">38.7%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">SHRIRAM Chlts Handworiring Series The Gita can be seen as Ihe main lirerary Support for the great relig surviving world The present commentary is another translarion and Salutary reminder one Sided and because i lacks Physical Cosciousness UI polirical pro testrions and depl , our Just So much verbiage Rajenam Aulhor aurhor 1800-102 6688 /18 14:47</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">1.2%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">❌ OCR Failed</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">TrOCR</span>
+                            <span class="text-xs font-semibold">0.0%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">आंधा</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>
+    

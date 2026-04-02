@@ -1,0 +1,127 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - hin_sample_23.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: hin_sample_23.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/hin_sample_23.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    जिसको हमेशा सिर्फ Assume करना
+आता हो बिना आपकी Condition
+देखे और आप पर इल्ज़ाम लगाना
+आता हो हर बार खुद को Victim
+बना कर , उस इन्सान से इतना प्यार
+करना जो आप हर पल चाहते हो,
+उसी से करना हर बार हर हालत
+में , वो आपके जीवन की सबसे
+बड़ी गलती होती है।
+                </div>
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+                <div class="space-y-4">
+    
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">30.2% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">नए जिसका हमेशा A ICU RAT mee खाता ता far आप Oct Ear Se &gt; ath जाप पर दललाम लगान जे -ज्ञाता शो धरवार Eo ही - लाता ऊर उस TT प्यार Say जा आप ex ag ae डे; a Poe aE aa una ‘i herent तट :</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">21.2% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">जाती - ey Ee ray StI = 7 once: Fa ee ARB, SAR ST पुर छेलजाम eg _ - अर्ती आओ ee हल ता ह Bg ७ es ४2:०२ ७७४ कि a &quot; =) SE EOE g y a aa ee a</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">26.5% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">जिसमोे ६मशा आपळा आाता आाप लगान पर खथ यार जाता रतन उस इन्सान यना ज दर ट्ालत से करन उस्ी सघस रलल</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">1.6% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">❌ OCR Failed</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Microsoft TrOCR</span>
+                            <span class="text-xs font-semibold">1.2% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">आॢता</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">IIT PLATTER (Indic)</span>
+                            <span class="text-xs font-semibold">24.1% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">जिसंको हमेशा सिर्फ निव्व्रणयत्र कषना
+उनाति ही चिना आपकीं ज्एचम्च्क
+छिबे औऱ डप प्र बतजाव जगान्ा
+गि
+छछ॰
+ऊ
+ब्नेा प्पड्फ
+उागि हीं हिबधित् षपुर
+ग्रण बरष्र उर्खां रंछ-सेट गिइड
+देठना पगान
+उताप हड पल न्याटरी हि।
+बनुच्रवी
+जाो
+जनी-खे बंतन्यछन। हबर बाज
+हबरहालत
+जीषन की स्यधिद।
+मै चो उनापकॽ
+बड़़ीं नालता।
+टोटी</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">BhaashaHWOCR (Indic)</span>
+                            <span class="text-xs font-semibold">40.8% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">जिसकों टमेशा भिर्फ फण्ल करना
+आतहो आता गो विना आपकी ज्लचतल
+थेथे और आप पक यूथ रत्जाम क पजल तगान
+जाता टो दथार इन्सान सेरताना म रतना प्
+धना कर। उसइन्सान उ एपलचाटो चांट टो़
+कर्ना जोआप जॉ ॠशार वार घहाल
+उती मैोआपके रे करना जीषन की सप्से
+बैगलती ब होतीह</p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

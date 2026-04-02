@@ -1,0 +1,133 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - hin_sample_11.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: hin_sample_11.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/hin_sample_11.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    कलंक
+मैं गहरा तामस
+तू सुनहरा सवेरा
+मैं तेरा ओ
+मैं तेरा
+
+मुसाफिर मैं भटका
+तू मेरा बसेरा
+मैं तेरा ओ
+मैं तेरा
+
+तू जुगनू चमकता
+मैं जंगल घनेरा
+मैं तेरा ओ
+
+27.2.25
+                </div>
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+                <div class="space-y-4">
+    
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">0.0% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">» ५ a ratt हा i SEED | ~ ws [i ¢ (aaa eee १५ RE HAN SO ¢ है yet sie ‘ yaar ART ४ || oa Hy Paes ee : agate seer ? ee क मेरा ar &quot; Sar है { ele a | Yi % ५. Sl Fem a जाल ; 4 Lat मै दर हो Pay ! ही जा — 3. 0.29 7 7. जाए</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">0.0% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">mo SL : PO .. 22: pee tf «3 an, . oe tel : a i [a 58 7-G5pl Oke ; So [Ai pete LE eee | | । ° eer a ES टिका हरे | | SO अप इतर 3 ok EL | \. -मैंट देंगी a Ase PE oR rae | g | oe aes al ae लत कि PN अ्िजण न पए् एफ: BEC पाता पर RT 7 ता आाआ Ze ZED ji mee! न्न्ीः तेरा: न RM ye yi ie ee i | 2 TAR RR age ee गए Z i ; vy Wa ae Pe ar Be dosh Te Pe pee “A [ib Qi ताक 2 कट लाए a Ree pe a SM BES ae ला .</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">16.9% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">कलंक ठादरा सवरा ओ R भटका धनरा ४==&gt;</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">1.3% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">❌ OCR Failed</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Microsoft TrOCR</span>
+                            <span class="text-xs font-semibold">3.2% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">हिंदुओं</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-yellow-300 bg-yellow-50 text-yellow-900">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">IIT PLATTER (Indic)</span>
+                            <span class="text-xs font-semibold">53.2% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">रिगुरधुरी
+ठ्छकलंक ४८
+मैं गद्रा तालस
+तू सुनइएा सवेश
+कें तेए ओ
+मैं तेए
+मुमाफ़ि मैं हुथ
+मेएा बझेठ
+हूँई बेटा ओ
+तैं तेए
+ये ज़गनू चणकता।
+नी जंगल घनेए
+में तेए ओ
+ईक-ॽ४</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">BhaashaHWOCR (Indic)</span>
+                            <span class="text-xs font-semibold">34.4% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">ग्ं गँ गदग त्रामस क गा
+त मुनाए मवेग क ग
+गं तेग र
+रंँ तेग
+मुमाफ़िर ग भ्रटका
+ट मेेर बते श्र
+ग रं गेग तेग क
+ग गा
+तं जुगनू जंगल चमकता धनेए
+गं तेग ओ
+ब ६ूं ग प क
+त ग ऋ गिेद</p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

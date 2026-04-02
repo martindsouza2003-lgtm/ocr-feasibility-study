@@ -1,0 +1,134 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - hin_sample_10.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: hin_sample_10.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/hin_sample_10.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    यूँ ही नहीं ये खालीपन मुझमें समाया होगा,
+मैनें अपने अंदर क्या -क्या दफनाया होगा ?
+अब मुझसे कहे भी नहीं जाते हालात मेरे ,
+शायद खामोशी पर मैंने एक उम्र को बिताया होगा।
+क्या मुझे ढूँढ़ने नहीं आया कोई अपना मेरा ?
+या खुद को मैनें बहुत एहतियात से छिपाया होगा।
+- Astha
+                </div>
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+                <div class="space-y-4">
+    
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">19.5% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">| op. . = 3 = = : “a 2 oe Ri 5 जज जज ST | co Fay Thon RE Mac : 7 के ee 4 Ur ss a re ota ae = Yeh जे Rap, : oy ey Acc a ae — i —— Ss = soe a || sil SS</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">20.7% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">ee SS : See Bee RR ae we UR 9 काश SS ees ™ - — = ~ el . ft — जि = mel ans Soe ge जात डा Ste SSS VO, Su h) ry eee ‘ = a NOR ; =o me oe | : — — Se OO tog re न पक CR OSE te</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">32.6% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">(05 MARCH मैने अपने ालीपन ख अदर अब मूझसे मुझमे शायद क्या खामोशी होगा , दफनाया होगा क्या जाते ढूँढने हालात गही खुद को मैंने आया बिताया कोई होगा | अपना र्हतियात मेरा २ ढिपाया होगा</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">0.8% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">❌ OCR Failed</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Microsoft TrOCR</span>
+                            <span class="text-xs font-semibold">1.5% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">ख़ातू</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">IIT PLATTER (Indic)</span>
+                            <span class="text-xs font-semibold">26.8% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">भूद्
+नै
+नि
+अब
+अपने शरू ऱरफफ
+डुबसे
+क्य
+डेबिसें
+शायद
+फ्या
+फहे भी केय
+फिफय
+भकशी
+शी रुच
+के
+परसें मैने
+जते
+वे
+या
+इविन जटी
+पर उित् भै वैलत बेदे
+आया कोई
+किय वय
+बुल सलिल अपना के र
+से
+पिज
+अैलन</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">BhaashaHWOCR (Indic)</span>
+                            <span class="text-xs font-semibold">30.7% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">मनँ मैनें ऋूँी महीीं व्ररज़ २३र मथ
+अब जपने अंदर ग्रे ख्वालीपन
+शायद मुझे कहे कया कय मुझमें जमाय
+कया मुझे ख़ामोशी पर मैने भी नहीं जाते दफ़नाप होग होग
+य छुद क ढ़ूँबने नहीं जाय कक ज् क हालाल मेरें मेरे मेे
+मैने बहुत रणहतियाल कोई अपना मेरा मे बिताया होगा
+गि गे छिणाय होएए।
+४ूँ
+ह</p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

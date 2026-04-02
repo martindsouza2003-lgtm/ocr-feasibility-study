@@ -1,0 +1,110 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - hin_sample_22.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: hin_sample_22.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/hin_sample_22.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    अब लोग रिफिल नहीं बदलते
+सीधा पेन ही बदल देते हैं !!
+
+लोग रिश्ते सुधारने की बजाए,
+रिश्ते बदलना ज्यादा आसान
+समझते हैं
+                </div>
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+                <div class="space-y-4">
+    
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">28.9% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">दि ॥ . — a सीधा ५ फिल नह - की बदल देते है. मल बज ज्यादा =</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">0.0% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">ee | पा SEY GPS OTe. [ = : झा | ४ &lt;a all a “ ees oe SSS os a 5२56८ af See SSS [ihe oR ae oS aS eS [8 ey es eae = ES IP [ish SS 3 कन्सा धारण की जज =e pees oe Re कीखबजाए = So oe Te, = ia SUS 505 = 2 pr) ee reece De कलिनन सन य ee EY TE a Se न 2-3 5० : oo ne ee Ls ici) a a =</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-yellow-300 bg-yellow-50 text-yellow-900">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">59.6% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">अब लोग रिफिल सीधा नहीं बदलते पेन लोग रिश्ते सुधारने बजाए बदलना आसान समझते</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">1.8% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">❌ OCR Failed</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Microsoft TrOCR</span>
+                            <span class="text-xs font-semibold">0.0% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">१४८ॢ</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-yellow-300 bg-yellow-50 text-yellow-900">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">IIT PLATTER (Indic)</span>
+                            <span class="text-xs font-semibold">58.8% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">गे।
+अब जोग
+सीघा पैन रिफिल नहीं बदलते
+ही बदत दैटे
+जोग रिश्ते
+रिश्ते
+सुधारने दे बजाप
+षदलना ज्यादा आसान
+समझते हैं</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">BhaashaHWOCR (Indic)</span>
+                            <span class="text-xs font-semibold">39.5% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">मब्लोग मौधा लोग रिफिलनहीं रिफिल
+मोग पेनीं पेन ही बढल नहीं ठेे बढलते हैं
+रिश्त बदलना रिश्ते सुधारने की बजा
+समझत समझते हं ज्यादा आसान</p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

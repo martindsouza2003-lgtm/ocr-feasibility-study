@@ -1,0 +1,90 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - eng_sample_02.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: eng_sample_02.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <!-- Image -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/eng_sample_02.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <!-- Ground Truth -->
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    For the Longest time my teachers told me I 
+had a good handwriting.. when I was at an age 
+where everyone seemed better than me, this is 
+all I had.. this has been my thing.. to white
+words that look beautiful and neat and sorted.. 
+so every now and then when life seems all
+fucked up.. I write and tell myself that it is
+all good.. it is still beautiful..
+                </div>
+
+                <!-- OCR Outputs -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+
+                <div class="space-y-4">
+
+                    <div class="border rounded-lg p-4 border-yellow-300 bg-yellow-50 text-yellow-900">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">78.1%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">For the lo Kine time my teachers told me | had a [९०८ handioné ting » “when | was at an age whue everyone seemed better than me, this K all | hac” this has ben 20007“ to white words that look beauteful ahd. nett and sorted. So Ca now and then when ufe sums all fucked “up... | waite and tel mypel f thet it is au (००4 - ८८ &amp; still beauteful a</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">34.4%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">: | . Gu. wo = mee a ee careers : Th to nee a - 0 Feb एप Hive muy teachers toldirne © hail agoad. Ranconttings “When. / 222: 777 दी: | where “eveyone dexiied! beltes thanmee, tid 8 jet 28 82०75 benny dings: 7 40%...&quot; | woKdlsthat Wok :beautipiland १४४९ cond उठते,&quot; | $0, every mown. and thane 00: विड 22 GM | fucked “up [atte andl. belt myself thok tk iS ee</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">16.2%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">Leachex told time mwhen Uhu age WQ At an eveyor Aeemed mo had SoALed Look bea aU</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">2.0%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">❌ OCR Failed</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">TrOCR</span>
+                            <span class="text-xs font-semibold">0.0%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">ऋषभदा</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>
+    

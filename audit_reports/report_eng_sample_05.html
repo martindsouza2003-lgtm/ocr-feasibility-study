@@ -1,0 +1,90 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - eng_sample_05.jpeg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: eng_sample_05.jpeg</p>
+            </div>
+
+            <div class="p-6">
+
+                <!-- Image -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/eng_sample_05.jpeg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <!-- Ground Truth -->
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    Hello, I am a professional handwritten
+notes writer. I éreate neat and 
+clean English handwritten notes and
+assignments.
+High-quality sean and on-time 
+delivery guaranteed.
+Message me before placing your 
+Order. Thank you!
+                </div>
+
+                <!-- OCR Outputs -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+
+                <div class="space-y-4">
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">34.7%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">— Netto, दो am ०१४2 See __nolen writen. ८ 0०८०९ reat ond — Clean _€ng Linh hondumitten ndler हि ee mmervit = रह _ का on-fima — deli ny —quanorteed .— » se न Mensage ५008 before cplosing your — है 004०७ ८#॥/८ You | चच््ओ</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">21.5%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">—Rello, 2) handusnitien— Chal any -quasionbeed .———______ Siombkeed . ५ ______— — Men sags —senebs x before placing your — _ Onder! “hinle No : AC ५४८७ -... ---++++ मनन</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">20.5%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">am Wniren noe noles ano nandtonirten Clean beione Meaa Now</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">3.2%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">❌ OCR Failed</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">TrOCR</span>
+                            <span class="text-xs font-semibold">0.0%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">ङ्क्षाओं</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>
+    

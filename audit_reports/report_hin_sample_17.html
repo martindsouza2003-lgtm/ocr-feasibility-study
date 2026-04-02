@@ -1,0 +1,131 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - hin_sample_17.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: hin_sample_17.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/hin_sample_17.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    &quot; अनजान &quot;
+इस छोटी सी दुनिया में,
+हर कोई दो-चार दिन का मेहमान है।
+जो लोग लगते थे अपनी कभी,
+अब वहीं अनजान है ||
+जिसने मिलने में बहुत खुशी होती थी,
+अब उनसे ना मिलने के बहाने ढूंढ़ते है।
+जो लोग लगते थे अपने कभी,
+अब वही अनजान है ||
+वक्त का पहिया कुछ एसा बदला,
+अपनो को ही दूर कर दिया |
+जो लोग लगते थे अपने कभी,
+अब वक्त ने उन्हें अनजान बना दिया ||
+                </div>
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+                <div class="space-y-4">
+    
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">41.5% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">|| LAA ‘ ps 2 2 ee (| a Bo छोवी सी दुनिया में; ¥ 3 =&lt; ee Sa दिन का मठमान दें | जो लौणा लणते औ अपनी Halt, os a8 अनजान FI 3 जसने मिलने में बठ॒त खुशी ady थी; = उतब उनसे ना मिलने के बहाने dea =| Ss tot लणते ay सपने कप्मी; a वही उनजान S| a. का Ra ee ST बढ़ता; S ag उपनी को ठी दूर कर err | हा ज्वी_ लीगा लणते ओऔ ऊपने att; : 9 उतन॒ब वक्‍त नी उन्हें ऊनजाना बना ड्थिः ॥ Pe कु &quot; न्‍ = - =— == == a हे =</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">0.0% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">he गति कतार in al Ci a eu ae) VA i He BT oy 2 BR 85 ॥॥॥॥ HA eee Na a ie कब “777777:777----:&lt;र Hae व न 7 oe | Wo rc 7-7 मु तय es Leet oak ee ee तल - aga SST दें meats of rar. ie Beet ere Sf : 25) ee weet | oo. my teat Rs Boh IK आदर 2A. He Seth et ert Se Se ee की न 7“ aera ai het बहाने ger ET : aa की Seta दि ee 9६०० ---&gt;..-&gt;तमतन्‍7् पा ee as a et oe —— are me वक्ता St eT जन aT a a en eae ann inn डा TO : ‘ a , Canna «or तय 7 तय दि भा: ।उैि दिेएढ तप निनताा न तिल न पतन ढ</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">41.8% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">अनजान में , छोटी सी डनिया इस दिन का थे अपनी है|| - वही अनजान अब मिलने जिसने बढ्त बढाने मिलने उनसे - अब लोग लगते = अनजान अब = बढला , पढिया एसा कुछ का वक्त दिया | ही अपनी को कर = दूर थे अपने कभी , दिया | उन्हें बना अनजन वक्त अब</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">0.6% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">❌ OCR Failed</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Microsoft TrOCR</span>
+                            <span class="text-xs font-semibold">1.5% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">आंधुत्र</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-yellow-300 bg-yellow-50 text-yellow-900">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">IIT PLATTER (Indic)</span>
+                            <span class="text-xs font-semibold">65.0% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">येउतनजा॑न
+बूखन छीटी सी हुनिया में।
+ठब्ट कोर्ट ही-चार हिन ब मतमाज हैं।
+जी लोग लरांते थैअपनी कुभी
+अब वठीं अनजान हैंग
+जिखने मिलने मैँ बहुत खुशी टेतीथी
+अनब उनखे ज। मिजर्न कै बटाने दूँधते ड
+जी लोग लराते थैअपने कुभी
+हैं।
+अनब वटी अनजान हैंग
+बक्त् क पटिया कुछ पुजना बदिख्त
+अपनी को टी दूर कुष्ट दिया
+जी लोीरा लराते थे अपने कुंभीर
+अब बवल ने-उन्टें अनजान बना हिया।</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-yellow-300 bg-yellow-50 text-yellow-900">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">BhaashaHWOCR (Indic)</span>
+                            <span class="text-xs font-semibold">55.6% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">अनजान
+रव छोटी ग दविया में मत्मान ह।
+ट कोग ही त चार दिनका गिन का कभी
+जो लोना लरांते भ अपनी
+अब वटीं अनजान कँग
+जिमने मिलने ग बढ़त खशी होती थी
+अब उनसे जा मिलने ग बटाने ढूंबते टँ
+जॉ लोग लशते भ अपने कुभी
+अब बटी अनजान रँग
+वक्त व पटिया कु दिया पमा बढल
+अपनी ब टी श ग क अपने कुंभी
+जॉ लोग लशते उन्टे अनजान बना हियाप
+अब वक्त न</p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

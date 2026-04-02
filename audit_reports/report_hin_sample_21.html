@@ -1,0 +1,124 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - hin_sample_21.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: hin_sample_21.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/hin_sample_21.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    &quot; जो बीत गई सो बात गई &quot;
+जीवन में एक सितारा था
+माना वह बेहद प्यारा था
+वह डूब गया तो डूब गया
+अम्बर के आँगन को देखो
+कितने इसके तारे टूटे
+जो छूट गये फिर कहाँ मिले
+पर बोलो टूटे तारों पर
+कब अम्बर शोक मनाता है
+जो बीत गई सो बात गई
+                </div>
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+                <div class="space-y-4">
+    
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">21.6% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">- &gt;जीवन में wan eae ar ars cee —— 6 sa J ce | ec ot eta aig सो बात गई = 2 ae see जज हे eS es — re — ee ee eT” ——————— &lt;&lt; कि ण</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">15.8% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">Se की की करन व 7 बह इब शया तो टब शा “Ha के न का eel</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">21.6% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">सितारा था था माना गया वह अ+ तने प२ पर मनाता शाक ऊम्वर कव गड्र सो बात</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">0.9% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">❌ OCR Failed</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Microsoft TrOCR</span>
+                            <span class="text-xs font-semibold">1.4% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">ॲप्ल।</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">IIT PLATTER (Indic)</span>
+                            <span class="text-xs font-semibold">47.3% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">जौ
+तेत गई सीबात गई
+जीवन मैस्कु खितारा था।
+गाना वद बहद डूमार था।
+ग़६ हूब ग़या ती इ्ब-ममाद
+उत-ज़र कू जादूँगन क़क
+ईि
+क्तर्ने इश्खरवकू तर
+हँ
+गर फिर कहां मिले
+ज़ड इछुः
+७९
+ग़र बलो टूर्टे दर पार
+ब।प उतठबार
+शगंव। गेण ह्ँ
+जी बीत गई सौ बात गाइ</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">BhaashaHWOCR (Indic)</span>
+                            <span class="text-xs font-semibold">34.7% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">जो बीत गई सीबातगई
+जीवन मेरक मं रक सितारा थ्रा
+माना बह डषगूयां डूब बह ग्रया बेहढ तॉ तोडूब पपार डूब था थ्रा ग्रया
+अम्बर ब ऑॉबन तूारेंटूट क द्ेखो
+क्ितने जॉ छट इमके गये तारे फिर टू कहॉं मितते
+पर बोतोटूट बोतो शोक तारीं मनाता पर हँ
+कब जोबीत जॉ बीतंगईसो अम्बर बीत गईसो बात</p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

@@ -1,0 +1,107 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - eng_sample_03.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: eng_sample_03.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <!-- Image -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/eng_sample_03.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <!-- Ground Truth -->
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    Dear Tom
+  How is it going these days?Ikeep wondering 
+how you feel about your school life in Beijing. 
+Have you got used to the life in China? Are 
+you enjoying your life? I hope you are.
+  Let me tell you a piece of good news: I&#x27;m 
+going to take part in an English speech 
+contest of middle school students in July in the 
+coming summer vacation. And I&#x27;m busy 
+preparing for it.But I have some
+difficulties in collecting useful information and 
+using proper English word to express my 
+thoughts. Besides, I really want to improve my 
+spoken English, especially the pronunciation and 
+intonation. Of course, as a native English 
+speaker, you can give me some suggestions.
+
+  In addition, I&#x27;m going to visit you after 
+the contest. I&#x27;m sure we will have a 
+wonderful time together in Beijing I can 
+hardly wait to see you! I am looking forward 
+to your early reply.
+
+                                      Yours 
+                                      Li Hua.
+                </div>
+
+                <!-- OCR Outputs -->
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+
+                <div class="space-y-4">
+
+                    <div class="border rounded-lg p-4 border-green-300 bg-green-50 text-green-900">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">94.0%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">Deg Tomis se = Se ce emery: ____ How is it going these days?Ikeep wondering how you feel about your school life in Beijing. Have you got used to the life in China?Are you enjoying your life? I hope you are. _ ____ Let _me_tell you 4 piece of good news: I&#x27;m going to take part in an English speech contest of middle school students in July in the coming summer vacation. And I&#x27;m _ busy preparing for it.But now I have some difficulties in collecting useful information and using proper English word to express my thoughts. Besides, I really want to improve my Spoken English, especially the pronunciation and intonation. Of course, as a native English Speaker, you can give me some suggestions. In addition, Im going to visit you after the contest. I’m sure we will have a wonderful time together in Beijing I can hardly wait to see you! I am looking forward to your early reply. Yours A Li Hua</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">40.2%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">contest iof middle ‘school. ‘students in.Julo in: ithe: 2eoming- ~ summer .\vacationy:. And: Tm. busty “Using. - proper. “Eniglish ४७७७४ ‘to: express: my. ‘tholights: Besides: 7. really -wantto-improve ‘my: spoken’ English especially’ the- iprontinciation ‘and. “intonation: ‘Of .couirse}: -४६- ६ - native: English : “speaker you can give .mesomexsuggestions: + __-Inaddition, ‘Tim’ going to. “visit” yous after: othe:..:contesti:. Tift suire. -we: ‘will. have. “sa. . _Wonderfil:. time: together ini ‘Beijing: II’ ican. hardly Waitt’ see&quot; youl! Tam. slooking:-forward: pos UN Fa या fe Ja pet Ua ee Abe</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-yellow-300 bg-yellow-50 text-yellow-900">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">52.2%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">Dear Tom How Bei jing how to the life China?Are Have used in got en joying your life? 1 hope you ore. piece of good news: Im Let me 0 going speech English to toke in an port middle school students in July in contest of the coming busy vocation. And summer preparing For it. But hove nOW some in collecting difFiculties useful informotion and using English word to express proper my thoughts Besides really want _ my spoken English the pronunciation especially and intonation Of native English course 0 suggestions speaker , you give can me some addition, going In to visit after contest. the will have sure VJe together wonderful time Bei jing hardly wait looking forward to ५OU ! om to your eorly reply Yours</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">0.9%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">❌ OCR Failed</p>
+                    </div>
+
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">TrOCR</span>
+                            <span class="text-xs font-semibold">0.0%</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words">उपाध्या</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+    </html>
+    

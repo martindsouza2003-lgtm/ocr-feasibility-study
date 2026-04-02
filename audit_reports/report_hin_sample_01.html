@@ -1,0 +1,162 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>OCR Audit - hin_sample_01.jpg</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-100 font-sans p-8">
+
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+            
+            <div class="bg-slate-800 text-white p-6">
+                <h1 class="text-2xl font-bold">Visual OCR Audit</h1>
+                <p class="text-slate-300 text-sm mt-1">File: hin_sample_01.jpg</p>
+            </div>
+
+            <div class="p-6">
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-2">Original Handwriting</h2>
+                <div class="flex justify-center bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-2 mb-8">
+                    <img src="../dataset/images/hin_sample_01.jpg" class="max-h-80 object-contain rounded" alt="Handwritten Sample">
+                </div>
+
+                <h2 class="text-xs font-bold text-green-600 uppercase mb-2">✅ Ground Truth</h2>
+                <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-8 whitespace-pre-wrap break-words">
+                    खालिद हुसैनी के इस पहले उपन्यास को मिली,
+कुछ जबरदस्त तारिफे
+
+शानदार और कदम कदम पर चौंकानेवाला कथानक
+इस किताब को न सिर्फ एक सियासी दस्तावेज के
+तौर पर बल्की एक ऐसी गहरी ज़ाती दास्तान
+के रूप यादगार बनाता है, जो बताती है की कैसे
+बचपन में किए गये फैसले वयस्क
+जीवन को प्रभावित करते है। अगर हम सिर्फ
+किरदारों की बारीक और दिलचस्प बुनावट
+पर ही गौर करें- फिर चाहे वो आमिर
+के किरदार की संवेदनशीलता औ भावनात्मक
+असुरक्षा का ताना बाना हो या फिर 
+उसके बाबा के किरदार की अच्छाई और
+बुराई, कुबार्नी और झुठ-फरेब के बहुरंगी
+धागों से की गई परतदार बुनावट हो, जो
+उस वक्त जाकर पुरी तरह उजागर होती है।
+                </div>
+
+                <h2 class="text-xs font-bold text-gray-400 uppercase mb-4">🤖 OCR Outputs</h2>
+                <div class="space-y-4">
+    
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Raw)</span>
+                            <span class="text-xs font-semibold">27.7% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">HS आअहृष्चृ्ा तर कै (मीन कण हज जप अन्दर Be RH कदम पश ath ate? HAS we Raw को का Fee छडलीकित के... are ae UH एक a at Bees Soy aoe aad TA ओम] ou er ey OL Oe ae व्यय व्किकक जीदल के प्रश्न करे -ह | woe ओह “Pn ह frat की was कोश Reve Gale? = So फट केरे -सक फिड are वो Cal Gear की उपवेटलशिलता A MAA FEE का लाता बाना है। आए THe Se | wae Tal 4 Grew की gest Ae amt | aaa ATT setae के qepv erat Hol एश्दाए HT ae Bq cad Kot पुरी तर Bae SH Sh</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Tesseract (Processed)</span>
+                            <span class="text-xs font-semibold">25.3% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">| al M_0 _ DONS qa कै AA Weel BAA ol मिली: HY जबरदस्त aw द Sra a wre A पश dHRA DAS . = Saw को ना ns TS fot eae ar ur aH एक एड eh ant rae S eu &gt;काहठार बलाता _ न्हैः &gt; = नै ; Ser ay wigan बनाता : ye AL ela ‘Qer 2! Tar जे Ba किए Ser RAT वयस्क किक जी oe ये बह करें © Cl ae yore VE | frag Boats: ate Tees Gaz यह ही Ge ase फिट Te ES कि Beare की व्वेदलशिसता MAS FRE कर तोता बातो DATE कल रुके बॉल Brae की gees ate “ant. wal aie eer eee FAL HAE. BANE Ber पोती AGN | ent 4 Ato POE oe oa eS wt ne दुआ वक्त HST पुरी TE SATE TT</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">EasyOCR</span>
+                            <span class="text-xs font-semibold">11.5% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">मिल कुछ पर मम सिरफ क ठाता के ताश + ठा२ भावनल्मझ क फि॰ तना असुश्क्षा बुहुरंगी त१</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">PaddleOCR</span>
+                            <span class="text-xs font-semibold">0.3% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">❌ OCR Failed</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">Microsoft TrOCR</span>
+                            <span class="text-xs font-semibold">0.0% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">१९४ॢ</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">IIT PLATTER (Indic)</span>
+                            <span class="text-xs font-semibold">45.5% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">जालंद हुसैनी के द्ररन पटरने उपत्यारम त़ मिली
+कुषे
+त्ंबरदर्त तारांफे निफ
+शनदार और बदम कदज पर गौकबूवाला कथालके
+किताब वो ता सि्फ एक सियासी ची इर्तावेश् छे
+हुस्न
+ऐसमेा थि १ॽ
+दुरताब
+तार पर बल्की एठ
+गाहरो
+कैसे
+के खप यदरगार बतातू हैँ लूूटतती
+दरईहँ
+य
+रगा
+वयुपत में विंस ई किएू गाय फैखल तयम्ता
+रुड्डू क़ो प्रभाबित करते है।अगर रंमसिय
+केरघाशू की दारीए और दिलचर्प बुन्ञाबट ७
+पर ही गैर करे कजफिर चाह्ट वो आंक्िय
+के किरदार का एवदनाशजता। गिक
+शं। ९ श्रावलात्मिक
+कु ताला बाना हिथा। फिर हिन
+असुरक्षा
+उसरू
+बुराई।
+केकिरधार क़ी
+उनलछार श्र
+बाजा
+बछिातीं ९ि४ ई
+ट
+ऑर सुढ-फरखे के बुहुंगा ही-रा
+सैकीएई परतघार बुज्ञाघर ई हो। त्ञा
+छॻ।
+रख
+रै
+बकत आकर
+तर६ उताठि
+हेटी
+पुर्री
+ह।</p>
+                    </div>
+        
+                    <div class="border rounded-lg p-4 border-gray-200 bg-gray-50 text-gray-800">
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold uppercase">BhaashaHWOCR (Indic)</span>
+                            <span class="text-xs font-semibold">46.2% Similarity</span>
+                        </div>
+                        <p class="whitespace-pre-wrap break-words mt-2">खालिद हुसेनी हूस बॉ के गस पल उपन्यास उप क मिली।
+कुछ सबरँदस्त तार्रफे
+शानदार मोर कदम कदम पथ चौकालेवाला रस्तावेत कथानकु के
+त्स किताब वो जा मिर्फ गेसी एक ग््री शियारसी ज्ञार्ता शुस्तान
+तोर पर बल्की बनाता ए़क़ टू टू तो बताता ह ह कॉ कैसे
+के एप यादगार किं्व कि गय फेसले वयक्क क्षवक्
+तचप्त नीवन गों वो पृभावित करते हे। मगर ट्म सिर्प
+किरदारों क् तारो सौर रिलचस्प बुनापर बूना आमिर बट
+पर ह गोर करें। कषी पितर चाहं मॉ व भावन त्मर
+के किरदार की संवेदनाशिलता बाना हो य। फिर कर
+असुरक्षा बाा कु ताना के किरदार रार की अरछाई नोर
+बुराई उसकू कुर्बानाी और झुठ परेब के बुहुरुर्गीं
+ध्ांगों रेे को गर परतदार परत थार बूना।र बन। चर हो ग्रो हे। हे। हे
+उ वक्त आाकर पुर्री तरह उजाशर होती ५</p>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

@@ -1,0 +1,15 @@
+# Virtual Environments
+ocr_env/
+platter_env/
+bhashini_core/PLATTER/platter_env/
+bhashini_core/BhaashaHWOCR/bhaasha_env/
+
+# AI Weights
+*.pt
+*.pth
+*.onnx
+
+# Caches & Temp Output
+__pycache__/
+bhashini_core/BhaashaHWOCR/bhaasha_temp_out/*.zip
+*.zip

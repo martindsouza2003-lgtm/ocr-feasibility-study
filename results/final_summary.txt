@@ -1,0 +1,8 @@
+📊 FINAL SUMMARY (AVERAGES)
+🔹 TrOCR      → CER:  98.78% | Time:  1.05s | RAM:  22.84 MB | CPU: 51.99%
+🔹 Tess_Raw   → CER:  63.80% | Time:  2.28s | RAM:   0.05 MB | CPU: 71.95%
+🔹 Tess_Proc  → CER:  87.12% | Time: 10.93s | RAM:   0.12 MB | CPU: 82.98%
+🔹 EasyOCR    → CER:  73.33% | Time: 25.41s | RAM:   9.94 MB | CPU: 54.76%
+🔹 PaddleOCR  → CER: 100.00% | Time: 25.67s | RAM:  18.41 MB | CPU: 57.07%
+🔹 PLATTER    → CER:  64.30% | Time:  5.85s | RAM:  26.78 MB | CPU: 52.21%
+🔹 Bhaasha    → CER:  58.00% | Time: 17.98s | RAM: 1751.94 MB | CPU: 227.03%
