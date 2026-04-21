@@ -12,15 +12,21 @@ from metrics_tracker import normalize_text
 # ==========================================
 # DYNAMIC MODEL CONFIGURATION
 # ==========================================
-# To add new models in the future, just add them to this list!
+# Google Gemini 2.5 Flash has been added here!
+# ==========================================
+# DYNAMIC MODEL CONFIGURATION
+# ==========================================
 MODELS = [
+    {"id": "Qwen3", "name": "Qwen3-VL (8B)", "file": "qwen.txt"}, # <--- ADDED QWEN HERE!
+    {"id": "GoogleGemini", "name": "Google Gemini 2.5 Flash", "file": "{base_name}.txt"},
+    {"id": "SarvamOCR", "name": "Sarvam Vision (Indic)", "file": "Sarvam.txt"}, 
     {"id": "Tess_Raw", "name": "Tesseract (Raw)", "file": "Tess_Raw.txt"},
     {"id": "Tess_Proc", "name": "Tesseract (Processed)", "file": "Tess_Proc.txt"},
     {"id": "EasyOCR", "name": "EasyOCR", "file": "EasyOCR.txt"},
     {"id": "PaddleOCR", "name": "PaddleOCR", "file": "PaddleOCR.txt"},
     {"id": "TrOCR", "name": "Microsoft TrOCR", "file": "TrOCR.txt"},
     {"id": "PLATTER", "name": "IIT PLATTER (Indic)", "file": "platter_pred.txt"},
-    {"id": "Bhaasha", "name": "BhaashaHWOCR (Indic)", "file": "bhaashahwocr_pred.txt"} # Pre-loaded for tomorrow!
+    {"id": "Bhaasha", "name": "BhaashaHWOCR (Indic)", "file": "bhaashahwocr_pred.txt"} 
 ]
 
 # ==========================================
@@ -93,8 +99,8 @@ def create_html_template(image_name, ground_truth, predictions_dict):
     for model in MODELS:
         pred_raw = safe_text(predictions_dict.get(model["id"], ""))
         
-        # If it says "No Output" and it's Bhaasha, we know we just haven't run it yet, so display slightly differently
-        if pred_raw == "⚠️ No Output" and model["id"] == "Bhaasha":
+        # Pending Status Logic
+        if pred_raw == "⚠️ No Output" and model["id"] != "GoogleGemini":
              score = 0.0
              display_text = "⏳ Pending Integration..."
         else:
@@ -169,7 +175,9 @@ def build_audit_reports():
         
         if os.path.exists(pred_folder):
             for model in MODELS:
-                file_path = os.path.join(pred_folder, model["file"])
+                # NEW: Replace {base_name} with the actual image name so Google's file is found
+                actual_filename = model["file"].replace("{base_name}", base_name)
+                file_path = os.path.join(pred_folder, actual_filename)
                 predictions_dict[model["id"]] = read_text_file(file_path)
 
         # -------- Generate HTML --------
@@ -224,3 +232,5 @@ def build_audit_reports():
 
 if __name__ == "__main__":
     build_audit_reports()
+
+    sk_dv063h34_YjfiEEQTVny9FPbGXpra1RzK
